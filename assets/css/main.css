@@ -642,6 +642,11 @@ input, select, textarea {
 		height: auto !important;
 	}
 
+	.result {
+		width : 500px !important;
+		height : auto !important;
+	}
+
 	.image {
 		border-radius: 4px;
 		border: 0;
