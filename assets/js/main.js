@@ -13,6 +13,7 @@
 		$footer = $('#footer'),
 		$main = $('#main'),
 		$main_articles = $main.children('article');
+		console.log($main_articles)
 
 	// Breakpoints.
 		breakpoints({
