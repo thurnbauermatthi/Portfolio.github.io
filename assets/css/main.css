@@ -637,6 +637,11 @@ input, select, textarea {
 
 /* Image */
 
+	.portrait {
+		width : 100px !important;
+		height: auto !important;
+	}
+
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -657,11 +662,6 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
-
-		.portrait {
-			width : 100px;
-    		height: auto;
 		}
 
 		.image img {
