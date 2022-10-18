@@ -640,6 +640,12 @@ input, select, textarea {
 	.portrait {
 		width : 100px !important;
 		height: auto !important;
+		transition: transform 0.25s ease;
+	}
+
+	.portrait.half {
+		transform: scale(5);
+		transition: transform 0.25s ease;
 	}
 
 	.result {

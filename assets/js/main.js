@@ -296,7 +296,7 @@
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
-							if (location.hash == "#playingcards" || location.hash == "#spam-filter" || location.hash == "pills") {
+							if (location.hash == "#playingcards" || location.hash == "#spam-filter" || location.hash == "#pills") {
 								location.hash = "#projects"
 								//$main._show(location.hash);
 							}

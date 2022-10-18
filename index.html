@@ -34,7 +34,7 @@
 
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<img src="./images/IMG_20210308_150650.jpg" alt="Portrait" class="portrait">
+								<img src="./images/IMG_20210308_150650.jpg" alt="Portrait" class="portrait" id="portrait">
 								<p>I am currently enrolled in a master program called Artificial Intelligence and Data Science at the Deggendorf Institute of Technology.
 									My master studies is a join program with the University of South Bohemia, where I've finished my first semester.
 									I am in the third semester and in the progress of finishing my master thesis. I have 1,5 years of experience as a Software Engineer and was studying the bachelor course Applied Computer Science at the Deggendorf Institue of Technology.
@@ -78,8 +78,11 @@
 
 							<article id="spam-filter">
 								<h2 class="major">Naive Bayes Spam Filter</h3>
-								<p>As the title says this project is a custom spam filter based on the Naive Bayes algorithm.
-
+								<p>As the title says this project is a custom spam filter based on the Naive Bayes algorithm. This was a team project of 3 people.
+									For this project we used an open-source sms message dataset from <a href="https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset">Kaggle</a>.
+									To detect whether a message is spam or ham we used multinomial Naive Bayes.
+									From 1124 messages our algorithm could classify 1103 correctly and 11 incorrectly. <br>
+									<img class="result" id="result0" src="./images/spam_ham_result.PNG" alt="Spam Filter result">
 								</p>
 							</article>
 
@@ -101,14 +104,35 @@
 									<div>
 										<img class="result" id="result2" src="./images/detection_result_image_yolov5.jpg" alt="Result for YoloV5">
 									</div>
-									
+								</p>
+								<p>
+									Although the result for both algorithms is not perfect, it was sufficient for this course.
+									To get better results I could've used more training data and also train for more epochs. Another option would be data augmentation during
+									the training process. But this would result in longer training duration, which was the reason for not using this approaches for the project.
 								</p>
 
 								
 							</article>
 							<article id="pills">
 								<h2 class="major">Detecting pills in blister packs</h3>
-								<p></p>
+								<p>This project was created during my second semester in the scope of the course Computer Vision.
+									The task came from an Engineering Competition held by the company Rohde&Schwarz. Our team consisted of three members and ranked 7th.
+									The official problem description is following: <br> <br>
+									<i>
+										The problem is an image segmentation problem. You are provided with microwave images of different pill blisters.
+										Each image consists of three slices with a spacing of 2.5 mm. 
+										Your goal is to detect, localize, and classify present and missing pills. You can find a picture of a pill blister and the corresponding microwave image below.
+									</i> <br> <br>
+								</p>
+								<h3>Result metrics</h3>
+								<p>
+									Our first attempt was a small CNN with two output layers. The first outputs the centroid coordinates of the detected class and the second one
+									was for outputting the class of the pill. This model had a really fast prediction time but lacked in class accuracy.
+									Our final attempt was the usage of YoloV5. To use it, we had to convert the centroid coordinates into bounding box coordinates. With this algorithm the
+									accuracy in detecting the class improved drastically. Therefore we sticked with Yolo for this competition.
+									Unfortunatelly, I cannot show example images due to confidentiality issues, but the metrics for my final submission look like this:
+									<img class="result" id="result3" src="./images/result_competition.png", alt="Competition result">
+								</p>
 							</article>
 
 							<article id="contact">
