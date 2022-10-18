@@ -92,10 +92,16 @@
 									The dataset consists of 136 images in total, where the train/val/test split is 110, 20 and 6, respectively. I've labeled the images with an online tool called roboflow. <br>
 									Here you can see a result image for both algorithms: <br><br>
 									<h3>Result for YoloV3</h3>
-									<img class="result" src="./images/detection_result_image_yolov3.PNG" alt="Result for YoloV3">
-									<br>
+									<div >
+										<img class="result" src="./images/detection_result_image_yolov3.PNG" alt="Result for YoloV3" onclick="enlargeImg($element)">
+									</div>
+									
+									<br><br>
 									<h3>Result for YoloV5</h3>
-									<img class="result" src="./images/detection_result_image_yolov5.jpg" alt="Result for YoloV5">
+									<div>
+										<img class="result" src="./images/detection_result_image_yolov5.jpg" alt="Result for YoloV5">
+									</div>
+									
 								</p>
 
 								
@@ -142,9 +148,6 @@
 					</footer>
 
 			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
