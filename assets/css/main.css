@@ -645,6 +645,14 @@ input, select, textarea {
 	.result {
 		width : 500px !important;
 		height : auto !important;
+		transition: transform 0.25s ease;
+	}
+
+
+	.result.half
+	{
+	transform: scale(2);
+	transition: transform 0.25s ease;
 	}
 
 	.image {

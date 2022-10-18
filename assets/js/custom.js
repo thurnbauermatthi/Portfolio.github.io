@@ -1,11 +1,7 @@
-function enlargeImg($element) {
-    img = $element
-    img.style.transform = "scale(1.5)"
-    img.style.transition = "transform 0.25s ease";
-}
+document.querySelector("#result1").addEventListener("click", function(){
+    this.classList.toggle("half");
+});
 
-function resetImg($element) {
-    img = $element
-    img.style.transform = "scale(1)"
-    img.style.transition = "transform 0.25s ease";
-}
+document.querySelector("#result2").addEventListener("click", function(){
+    this.classList.toggle("half");
+});
